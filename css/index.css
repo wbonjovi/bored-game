@@ -1,0 +1,141 @@
+header {
+    width: 100%;
+    height: 2.5em;
+    padding-top: 0.5em;
+    padding-bottom:  0.5em  ;
+    background-color: #5AC0CE;
+    font-size: 1.5em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    text-align: center;
+
+}
+header .white{
+    color : white;
+}
+header .blue{
+    color: #5AC0CE;
+}
+header div {
+    display: inline;
+}
+header .center{
+    background:url(../images/bar.png) no-repeat 0 0;
+    background-size: 100% 100%;
+    padding: 0.3em;
+
+}
+header #header-right{
+    background:url(../images/bigger-location.png) no-repeat 0 0;
+    background-size: 100% 100%;
+    height: 80%;
+    width: 1em;
+    float: right;
+    margin-right : 1em ;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    margin: 6.5em 0  6em 0  ;
+}
+nav.navbar{
+    width: 100%;
+}
+.under-head{
+    background-color: white;
+    margin-top: 0;
+    position: fixed;
+    top: 3.5em;
+    left: 0;
+}
+.under-head .left{
+    width: 33.33%;
+    float: left;
+    margin: 0;
+}
+.under-head {
+    width: 100%;
+    text-align: center;
+}
+.dropdown{
+    width: 100%;
+    text-align: center;
+}
+.container .row .left{
+    text-align: left;
+    overflow:hidden;
+    text-overflow : ellipsis;
+    white-space:nowrap;
+}
+.container .row .right{
+    text-align: right;
+    text-overflow : ellipsis;
+    white-space:nowrap;
+    color: red;
+}
+.container .gray-color{
+    color: #A0A0A0;
+}
+.container .right .image{
+    display: inline;
+    width:  auto;
+    height:  0.5em;
+}
+.container .right {
+    float: right;
+    width: 50%;
+    display: inline;
+}
+.container .left {
+    float: left;
+    width: 50%;
+
+    display: inline;
+}
+.container{
+    width:100%;
+}
+.footer {
+    background-color: white;
+    width: 100%;
+    height: 3.1em;
+    font-size: 1.3em;
+    padding:  0 ;
+    overflow: hidden;
+    text-align: center;
+}
+.footer div{
+    display: inline;
+}
+.footer .left  {
+    float: left;
+    font-size: 0.5em;
+    text-align: center;
+    color : #5AC0CE;
+}
+.footer .right  {
+    float: right;
+    font-size: 0.5em;
+    text-align: center;
+    color : #A0A0A0 ;
+}
+.footer .center {
+    margin: auto
+}
+.footer .center button{
+    border-radius: 50%;
+    width: 3em;
+    height:  3em;
+    background-color: #5AC0CE;
+}
+.footer button img{
+    width:  60%;
+    height:  50%;
+}
+.footer button{
+    outline:none;
+    background-color:transparent;
+    border: 0;
+}
