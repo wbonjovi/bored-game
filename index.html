@@ -23,10 +23,10 @@
             background-color: #5AC0CE;
             font-size: 1.5em;
             position: fixed;
-            top: 0;
             left: 0;
             margin: 0;
             clear: both;
+            top: 0;
         }
         header .three-bar .bar{
 
@@ -34,92 +34,127 @@
         body{
             margin: 2.5em 0 ;
         }
-        .oh-my-body .row{
-            margin: 0 5%;
-        }
-        .container{
+        .container-fluid{
             background-color: white;
-            margin: 5% auto ;
+            margin: 2em 5% ;
         }
         .vertion-choose{
             background-color: #5AC0CE;
             padding: 2em;
             color : white;
+            width: 60%;
+            margin: 2em auto;
+        }
+        .real-body{
+            text-align: center;
+            overflow: hidden;
+            display: inline;
         }
         .rectangle{
             background-color: white;
             color : gray;
             display: inline;
             float: right;
+            display: inline;
         }
         .orange-header{
             color: orange;
             font-size: 1.5em;
             padding: 0.5em;
         }
+        .four-circle{
+            margin: 0 auto;
+        }
+        .little-circle{
+            width:  1em;
+            height: 1em;
+            border-radius: 50%;
+        }
+        .blue-circle{
+            background-color: #5AC0CE;
+        }
+        .gray-circle{
+            background-color: #9d9d9d;
+        }
+        .div-circle{
+            display:  inline;
+        }
     </style>
 </head>
 <body>
-<header class=" header nav" >
+
+<header   class=" header "  >
+    <div>
     <div class=" three-bar col-lg-1 col-md-1 col-sm-1 col-xs-1 ">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
-    </div> 假装是首页
+    </div>
+        假装是首页
+    </div>
 </header>
-
+<br>
 <div class="oh-my-body ">
 
-    <div class="last-game container contain">
+    <div class="last-game container-fluid">
         <div class="row">
-            <div class="col-lg-10 col-lg-offset-1 ">
+            <div class="  ">
                 上次游戏：捉鬼猜词版
             </div>
         </div>
     </div>
-    <div class="game container contain">
+    <div class="game container-fluid ">
 
         <div class="game-header row">
-            <div class="row">
-                <div class="orange-header col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                哈哈哈哈哈哈
+                <div class="orange-header   ">
                     捉鬼游戏
                 </div>
-            </div>
+                <div class="clearfix visible-xs"></div>
         </div>
+
         <hr style=" color: orange; width: 100% ">
-        <div class=" row">
-            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 vertion-choose">
+
+        <div >
+        <div class="real-body">
+        <div class="">
+            <div class="  vertion-choose">
                 简化版
             </div>
         </div>
-        <div class=" row">
+        <div class="">
             有1133个用户在玩此款游戏
         </div>
-        <div class=" row">
-            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 vertion-choose">
+        <div class="">
+            <div class="vertion-choose">
                  猜词版
             </div>
-            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1   rectangle">
-                <span class="caret"></span>
-            </div>
         </div>
-        <div class=" row">
+        <div class="">
             有1133个用户在玩此款游戏
         </div>
-        <div class=" row">
-            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 vertion-choose">
+        <div class="">
+            <div class="vertion-choose">
                  白痴版
             </div>
         </div>
-        <div class=" row">
+        <div class="">
             有1133个用户在玩此款游戏
         </div>
-        <div class="row four-circle">
+        </div>
+        <div class=" rectangle ">
+            <div class="glyphicon glyphicon-triangle-right" style=" color: orange"></div>
+        </div>
+    </div>
+        <div class=" four-circle row">
             <div class="col-lg-2 col-lg-offset-5 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2">
-                <span class="blue-circle col-lg-3 col-md-3 col-sm-3 col-xs-3"> 1</span>
-                <span class="gray-circle col-lg-3 col-md-3 col-sm-3 col-xs-3"> 2</span>
-                <span class="gray-circle col-lg-3 col-md-3 col-sm-3 col-xs-3"> 3</span>
-                <span class="gray-circle col-lg-3 col-md-3 col-sm-3 col-xs-3"> 4</span>
+                <div class="div-circle"><div class="blue-circle little-circle"> </div></div>
+                &nbsp;
+                <div class="div-circle"><div class="gray-circle little-circle"> </div></div>
+                &nbsp;
+                <div class="div-circle"><div class="gray-circle little-circle"> </div></div>
+                &nbsp;
+                <div class="div-circle"><div class="gray-circle little-circle"> </div></div>
             </div>
         </div>
 
