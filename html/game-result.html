@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../js/jquery/2.0.0/jquery.min.js"></script>
+    <link href="../css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+    <script src="../js/bootstrap/3.3.6/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <style>
+        header{
+            background-color:  #5AC0CE;
+            width: 100%;
+            color: white;
+            font-size: 2rem;
+            text-align: center;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        header .left{
+            float: left;
+            padding: 0.5rem;
+            width: 1rem;
+            height: 1rem;
+            background: url("../images/house.png") no-repeat 0 0;
+        }
+        header .right{
+            float: right;
+            padding: 0.5rem;
+            width: 1rem;
+            height: 1rem;
+        }
+        body{
+            margin:  3rem 0;
+            background-color:  #5AC0CE;
+        }
+        .result-all{
+            background-color: #5AC0CE;
+            width: 100%;
+        }
+        .result-image{
+            text-align: center;
+        }
+        .result-image img{
+            width: 50%;
+            height: auto;
+        }
+        footer{
+            background-color: rgba(255,255,255,.5);
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding:  5vw;
+        }
+        footer .left{
+            float: left;
+            width: 40vw;
+            background-color: red;
+        }
+        footer .right{
+            float: right;
+            width: 40vw;
+            background-color: orange;
+        }
+        footer button{
+            color: white;
+            padding: 0.5rem;
+            font-size: 2rem;
+            border:  none;
+            outline: none;
+            border-radius: 5px;
+        }
+    </style>
+    <title>游戏结果</title>
+</head>
+<body>
+
+<header>
+    <div class="left">
+    </div>
+    游戏结果
+    <div class="right">
+        <img src="../images/warning.png " alt="">
+    </div>
+</header>
+
+<div class="result-all container-fluid">
+    <div class="row result-image">
+        <img src="../images/wining.png" alt="">
+    </div>
+    <p style="color: orange">
+        太棒了!你知道么？在捉鬼游戏中 只有20%的卧底取得游戏最终的 胜利哦！
+    </p>
+        <p style="color: white">
+        本次游戏共计用时0小时25分钟 <br>
+        杀&nbsp;&nbsp;&nbsp;&nbsp;手0人     警&nbsp;&nbsp;&nbsp;&nbsp;察1人     平&nbsp;&nbsp;&nbsp;&nbsp;民1人 <br>
+        狙击手0人     医&nbsp;&nbsp;&nbsp;&nbsp;生1人 <br>
+        卧底词汇：爱新觉罗 <br>
+        水民词汇：努尔哈赤 <br>
+        </p>
+</div>
+
+<div class="result-eachday container-fluid">
+    <div  class="row result-oneday">
+
+    </div>
+    <hr style="color: gray; width: 100% ">
+
+    <div  class="row result-oneday">
+
+    </div>
+    <hr style="color: gray; width: 100% ">
+
+    <div  class="row result-oneday">
+
+    </div>
+    <hr style="color: gray; width: 100% ">
+
+</div>
+
+<footer>
+    <button class="left">
+        再来一局
+    </button>
+    <button class="right">
+        上传并分享
+    </button>
+</footer>
+</body>
+</html>
