@@ -6,12 +6,12 @@
     <script src="../js/jquery/2.0.0/jquery.min.js"></script>
     <link href="../css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
     <script src="../js/bootstrap/3.3.6/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../css/discussion.css">
+    <!--<link rel="stylesheet" type="text/css" href="../css/discussion.css">-->
     <title>投票</title>
     <style>
         body{
             background-color: #29BDE0;
-            margin: 0 0 12% 0;
+            margin: 0 0 20% 0;
         }
         header{
             text-align: center;
@@ -64,8 +64,8 @@
             margin: 0 ;
         }
         .hover-father{
-            width:  21vw ;
-            height:  32vw ;
+            width:  20vw ;
+            height:  33vw ;
             margin :  0 5.9%  ;
             float: left;
             overflow: hidden;
@@ -73,8 +73,8 @@
         .person{
             width:  20vw ;
             font-height: 20%;
-            height:  20vw ;
-            border: solid white 3px;
+            height:  21vw ;
+            border: solid white 2px;
             background-color: #F5C97B;
         }
         .person .up{
@@ -89,6 +89,7 @@
             float: left;
             width: 100%;
             height: 30%;
+            color: white;
             background-color: #83b09a ;
         }
         .person  .word{
@@ -107,36 +108,49 @@
             display:none;
         }
         .hover-element .operation-button{
-            margin: 0 0.2vw 0 0;
-            width:  4vw ;
+            width:  3.5vw ;
             height:  4vw ;
+            margin-right:  auto;
             display: inline-block;
-            background: white;
+            background-color: white;
+            padding: 0;
         }
-        .hover-element .operation-button img{
-            width: 100%;
-            height: 100%
+        .knife {
+            background: url("../images/knife.png") no-repeat 0 0;
+            background-size: 100% 100% ;
+        }
+        .exam {
+            background: url("../images/exam.png") no-repeat 0 0;
+            background-size: 100% 100% ;
+        }
+        .aim {
+            background: url("../images/aim.png") no-repeat 0 0;
+            background-size: 100% 100% ;
+        }
+        .plus {
+            background: url("../images/plus.png") no-repeat 0 0;
+            background-size: 100% 100% ;
         }
         footer{
             position : fixed;
             bottom: 0;
             left: 0;
             width: 100%;
-            padding: 1% 5% ;
+            padding:  2rem ;
+            text-align: center;
             background-color: #29BDE0;
         }
         footer button{
             color: white;
             text-align: center;
-            font-size:  2rem;
             background-color: orange;
             color : white;
-            padding: 1%;
+            padding: 1rem;
             outline: none ;
             width: 70%;
-            margin-left : 10%;
             border: none;
         }
+
     </style>
 </head>
 <body>
@@ -157,8 +171,10 @@
         </div>
     </div>
 </div>
-<div class="downward-triangle ">
-    &nbsp; &nbsp; &nbsp; <img src="../images/downward-triangle.png" alt="">
+<div class="downward-triangle "  style="background-color: white ; position: relative; ">
+    <div class="downward-triangle-div"    style=":  ">
+    &nbsp; &nbsp; &nbsp; &nbsp; <img src="../images/downward-triangle.png" alt="" style="position: absolute; top: 0">
+    </div>
 </div>
 
 <div class="row " style="color: white" >
@@ -182,10 +198,10 @@
             </div>
 
             <div class="hover-element">
-                <div class="knife operation-button"><img src="../images/knife.png" alt=""> </div>
-                <div class="exam operation-button"><img src="../images/exam.png" alt="">  </div>
-                <div class="aim operation-button"><img src="../images/aim.png" alt="">  </div>
-                <div class="plus operation-button"><img src="../images/plus.png" alt="">  </div>
+                <div class="knife operation-button"> </div>
+                <div class="exam operation-button"></div>
+                <div class="aim operation-button"></div>
+                <div class="plus operation-button"></div>
             </div>
         </div>
 
@@ -204,10 +220,10 @@
             </div>
 
             <div class="hover-element">
-                <div class="knife operation-button"><img src="../images/knife.png" alt=""> </div>
-                <div class="exam operation-button"><img src="../images/exam.png" alt="">  </div>
-                <div class="aim operation-button"><img src="../images/aim.png" alt="">  </div>
-                <div class="plus operation-button"><img src="../images/plus.png" alt="">  </div>
+                <div class="knife operation-button"> </div>
+                <div class="exam operation-button"></div>
+                <div class="aim operation-button"></div>
+                <div class="plus operation-button"></div>
             </div>
         </div>
 
@@ -226,17 +242,17 @@
             </div>
 
             <div class="hover-element">
-                <div class="knife operation-button"><img src="../images/knife.png" alt=""> </div>
-                <div class="exam operation-button"><img src="../images/exam.png" alt="">  </div>
-                <div class="aim operation-button"><img src="../images/aim.png" alt="">  </div>
-                <div class="plus operation-button"><img src="../images/plus.png" alt="">  </div>
+                <div class="knife operation-button"> </div>
+                <div class="exam operation-button"></div>
+                <div class="aim operation-button"></div>
+                <div class="plus operation-button"></div>
             </div>
         </div>
 
     </div>
 </div>
 
-<div class="person-page">
+<div class="person-page ">
     <div class="row">
         <div class="hover-father">
             <div class="person">
@@ -253,10 +269,10 @@
             </div>
 
             <div class="hover-element">
-                <div class="knife operation-button"><img src="../images/knife.png" alt=""> </div>
-                <div class="exam operation-button"><img src="../images/exam.png" alt="">  </div>
-                <div class="aim operation-button"><img src="../images/aim.png" alt="">  </div>
-                <div class="plus operation-button"><img src="../images/plus.png" alt="">  </div>
+                <div class="knife operation-button"> </div>
+                <div class="exam operation-button"></div>
+                <div class="aim operation-button"></div>
+                <div class="plus operation-button"></div>
             </div>
         </div>
 
@@ -275,10 +291,10 @@
             </div>
 
             <div class="hover-element">
-                <div class="knife operation-button"><img src="../images/knife.png" alt=""> </div>
-                <div class="exam operation-button"><img src="../images/exam.png" alt="">  </div>
-                <div class="aim operation-button"><img src="../images/aim.png" alt="">  </div>
-                <div class="plus operation-button"><img src="../images/plus.png" alt="">  </div>
+                <div class="knife operation-button"> </div>
+                <div class="exam operation-button"></div>
+                <div class="aim operation-button"></div>
+                <div class="plus operation-button"></div>
             </div>
         </div>
 
@@ -297,17 +313,17 @@
             </div>
 
             <div class="hover-element">
-                <div class="knife operation-button"><img src="../images/knife.png" alt=""> </div>
-                <div class="exam operation-button"><img src="../images/exam.png" alt="">  </div>
-                <div class="aim operation-button"><img src="../images/aim.png" alt="">  </div>
-                <div class="plus operation-button"><img src="../images/plus.png" alt="">  </div>
+                <div class="knife operation-button"> </div>
+                <div class="exam operation-button"></div>
+                <div class="aim operation-button"></div>
+                <div class="plus operation-button"></div>
             </div>
         </div>
 
     </div>
 </div>
 
-<div class="person-page">
+<div class="person-page ">
     <div class="row">
         <div class="hover-father">
             <div class="person">
@@ -324,10 +340,10 @@
             </div>
 
             <div class="hover-element">
-                <div class="knife operation-button"><img src="../images/knife.png" alt=""> </div>
-                <div class="exam operation-button"><img src="../images/exam.png" alt="">  </div>
-                <div class="aim operation-button"><img src="../images/aim.png" alt="">  </div>
-                <div class="plus operation-button"><img src="../images/plus.png" alt="">  </div>
+                <div class="knife operation-button"> </div>
+                <div class="exam operation-button"></div>
+                <div class="aim operation-button"></div>
+                <div class="plus operation-button"></div>
             </div>
         </div>
 
@@ -346,10 +362,10 @@
             </div>
 
             <div class="hover-element">
-                <div class="knife operation-button"><img src="../images/knife.png" alt=""> </div>
-                <div class="exam operation-button"><img src="../images/exam.png" alt="">  </div>
-                <div class="aim operation-button"><img src="../images/aim.png" alt="">  </div>
-                <div class="plus operation-button"><img src="../images/plus.png" alt="">  </div>
+                <div class="knife operation-button"> </div>
+                <div class="exam operation-button"></div>
+                <div class="aim operation-button"></div>
+                <div class="plus operation-button"></div>
             </div>
         </div>
 
@@ -368,20 +384,24 @@
             </div>
 
             <div class="hover-element">
-                <div class="knife operation-button"><img src="../images/knife.png" alt=""> </div>
-                <div class="exam operation-button"><img src="../images/exam.png" alt="">  </div>
-                <div class="aim operation-button"><img src="../images/aim.png" alt="">  </div>
-                <div class="plus operation-button"><img src="../images/plus.png" alt="">  </div>
+                <div class="knife operation-button"> </div>
+                <div class="exam operation-button"></div>
+                <div class="aim operation-button"></div>
+                <div class="plus operation-button"></div>
             </div>
         </div>
 
     </div>
 </div>
+
+
 
 <footer>
+    <div>
     <button>
         投死
     </button>
+    </div>
 </footer>
 
 </body>
