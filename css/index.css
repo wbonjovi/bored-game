@@ -13,10 +13,10 @@ header {
     background-color: #5AC0CE;
     font-size: 1.5em;
     position: fixed;
+    top: 0;
     left: 0;
     margin: 0;
     clear: both;
-    top: 0;
 }
 header .three-bar .bar {
     height: 0.3em;

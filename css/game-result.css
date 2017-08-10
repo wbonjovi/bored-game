@@ -6,6 +6,9 @@ header{
     text-align: center;
     overflow: hidden;
     padding: 1vw;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 header .left{
     float: left;
@@ -24,7 +27,8 @@ header img {
     height: 100%;
 }
 body{
-    margin-bottom: 22vw;
+    background-color: #5AC0CE;
+    margin: 4rem 0 0 0;
     padding: 0;
 }
 .result-all{
