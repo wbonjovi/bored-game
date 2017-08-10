@@ -6,7 +6,7 @@
     <script src="../js/jquery/2.0.0/jquery.min.js"></script>
     <link href="../css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
     <script src="../js/bootstrap/3.3.6/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
     <style>
         header{
             background-color:  #5AC0CE;
@@ -15,26 +15,27 @@
             font-size: 2rem;
             text-align: center;
             overflow: hidden;
-            position: fixed;
-            top: 0;
-            left: 0;
+            padding: 1vw;
         }
         header .left{
             float: left;
-            padding: 0.5rem;
-            width: 1rem;
-            height: 1rem;
-            background: url("../images/house.png") no-repeat 0 0;
+            width: 2rem;
+            height: 2rem;
+            margin-left: 1em;
         }
         header .right{
             float: right;
-            padding: 0.5rem;
-            width: 1rem;
-            height: 1rem;
+            width: 2rem;
+            height: 2rem;
+            margin-right: 1em;
+        }
+        header img {
+            width: 100%;
+            height: 100%;
         }
         body{
-            margin:  3rem 0;
-            background-color:  #5AC0CE;
+            margin-bottom: 22vw;
+            padding: 0;
         }
         .result-all{
             background-color: #5AC0CE;
@@ -47,8 +48,38 @@
             width: 50%;
             height: auto;
         }
+        .container-fluid {
+            width: 100%;
+            padding: 0 5rem;
+        }
+        .result-oneday {
+            background-color: white;
+        }
+        .result-oneday div:first-child {
+            display: block;
+            overflow: hidden;
+            margin: 0.5rem 0;
+        }
+        .result-oneday div:last-child{
+            font-size: 1rem;
+            color: #9d9d9d;
+            margin: 0.5rem 0;
+        }
+        .result-oneday div div:first-child {
+            float: left;
+            display: inline;
+            font-size: 1rem;
+        }
+        .result-oneday div div:nth-child(2) {
+            float: right;
+            font-size: 1rem;
+            color: #9d9d9d;
+        }
+        hr {
+            margin: 0;
+        }
         footer{
-            background-color: rgba(255,255,255,.5);
+            background-color: rgba(90,192,206,.5);
             position: fixed;
             bottom: 0;
             left: 0;
@@ -80,6 +111,7 @@
 
 <header>
     <div class="left">
+        <img src="../images/house.png " alt="">
     </div>
     游戏结果
     <div class="right">
@@ -88,9 +120,11 @@
 </header>
 
 <div class="result-all container-fluid">
+    <br>
     <div class="row result-image">
         <img src="../images/wining.png" alt="">
     </div>
+    <br>
     <p style="color: orange">
         太棒了!你知道么？在捉鬼游戏中 只有20%的卧底取得游戏最终的 胜利哦！
     </p>
@@ -103,24 +137,59 @@
         </p>
 </div>
 
-<div class="result-eachday container-fluid">
-    <div  class="row result-oneday">
-
+<div class="result-eachday">
+<hr style="color: gray; width: 100% ">
+<div  class="container-fluid result-oneday">
+    <div>
+        <div>
+            第一天
+        </div>
+        <div>
+            0时07分
+        </div>
     </div>
-    <hr style="color: gray; width: 100% ">
-
-    <div  class="row result-oneday">
-
+    <div>
+        晚上：5号被杀死，5号是水民 <br>
+        白天：8号被全民投票杀死，8号是杀手
     </div>
-    <hr style="color: gray; width: 100% ">
+</div>
+<hr style="color: gray; width: 100% ">
 
-    <div  class="row result-oneday">
-
+<div  class="container-fluid result-oneday">
+    <div>
+        <div>
+            第一天
+        </div>
+        <div>
+            0时07分
+        </div>
     </div>
-    <hr style="color: gray; width: 100% ">
+    <div>
+        晚上：5号被杀死，5号是水民 <br>
+        白天：8号被全民投票杀死，8号是杀手
+    </div>
+</div>
+<hr style="color: gray; width: 100% ">
+
+<div  class="container-fluid result-oneday">
+    <div>
+        <div>
+            第一天
+        </div>
+        <div>
+            0时07分
+        </div>
+    </div>
+    <div>
+        晚上：5号被杀死，5号是水民 <br>
+        白天：8号被全民投票杀死，8号是杀手
+    </div>
+</div>
+<hr style="color: gray; width: 100% ">
 
 </div>
 
+<audio src="../audio/财富自由.mp3"> </audio>
 <footer>
     <button class="left">
         再来一局
