@@ -5,7 +5,6 @@ header{
     font-size: 2rem;
     text-align: center;
     overflow: hidden;
-    padding: 1vw;
     position: fixed;
     top: 0;
     left: 0;
@@ -27,13 +26,18 @@ header img {
     height: 100%;
 }
 body{
-    background-color: #5AC0CE;
-    margin: 4rem 0 0 0;
+    background-color: white;
+    margin:   0 0 17vw 0;
     padding: 0;
+    width: 100%;
+}
+p {
+    margin: 2rem;
 }
 .result-all{
     background-color: #5AC0CE;
     width: 100%;
+    border-bottom: 1px solid gray
 }
 .result-image{
     text-align: center;
@@ -44,8 +48,7 @@ body{
     height: auto;
 }
 .container-fluid {
-    width: 100%;
-    padding: 0 5rem;
+    padding: 0 2rem;
 }
 .result-oneday {
     background-color: white;
@@ -72,6 +75,7 @@ body{
 }
 hr {
     margin: 0;
+    height: 0;color: gray; width: 100%
 }
 footer{
     background-color: rgba(90,192,206,.5);
@@ -79,17 +83,21 @@ footer{
     bottom: 0;
     left: 0;
     width: 100%;
-    padding:  5vw;
+    padding: .5rem 0;
 }
 footer .left{
     float: left;
-    width: 40vw;
+    width: 47vw;
     background-color: red;
+    margin-left: 2%;
+    font-size: 1.5rem;
 }
 footer .right{
+    margin-right:  2%;
     float: right;
-    width: 40vw;
+    width: 47vw;
     background-color: orange;
+    font-size: 1.5rem;
 }
 footer button{
     color: white;

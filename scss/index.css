@@ -1,0 +1,91 @@
+header {
+  width: 100%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-color: #5AC0CE;
+  font-size: 1.5em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  clear: both; }
+  header .three-bar .bar {
+    margin-left: 1rem;
+    height: 0.3em;
+    width: 2em; }
+  header .three-bar .white {
+    height: 0.07em;
+    width: 1em;
+    background-color: white; }
+
+body {
+  background-color: #f0f0f0;
+  margin: 4em 0; }
+  body hr {
+    margin: 0; }
+  body .row {
+    margin: 0;
+    text-align: center; }
+  body .last-game {
+    color: #9d9d9d;
+    font-size: 1em;
+    padding: 1em;
+    margin: 2em 5%;
+    background-color: white;
+    border: solid 1px #c0c0c0; }
+    body .last-game #last-game-right {
+      background: url(../images/direction.png) no-repeat 0 0;
+      background-size: 100% 100%;
+      height: 1.5em;
+      width: 0.9em;
+      float: right;
+      margin-right: 1em; }
+  body .game {
+    margin: .5em 5%;
+    background-color: white;
+    border: solid 1px #c0c0c0; }
+    body .game .orange-header {
+      color: orange;
+      font-size: 1.2em;
+      padding: 0.5em; }
+    body .game .triangle {
+      float: right;
+      display: inline-block;
+      width: 5%;
+      margin-right: 5px; }
+      body .game .triangle .image {
+        background: url(../images/rightward-triangle.png) no-repeat 0 0;
+        background-size: 100% 100%;
+        height: 2em;
+        width: 1em;
+        margin: auto 0; }
+    body .game .real-body {
+      text-align: center;
+      overflow: hidden;
+      width: 80%;
+      margin: 0 0 0 10%; }
+      body .game .real-body .vertion-choose {
+        background-color: #5AC0CE;
+        padding: 1.5em;
+        color: white;
+        width: 100%;
+        margin: 1em auto;
+        outline: none;
+        border: none; }
+    body .game .four-circle {
+      margin: 0 auto; }
+      body .game .four-circle .little-circle {
+        width: .5em;
+        height: .8em;
+        border-radius: 50%; }
+      body .game .four-circle .div-circle {
+        display: inline; }
+        body .game .four-circle .div-circle button {
+          border: none;
+          outline: none; }
+        body .game .four-circle .div-circle .blue-circle {
+          background-color: #5AC0CE; }
+        body .game .four-circle .div-circle .gray-circle {
+          background-color: #9d9d9d; }
+
+/*# sourceMappingURL=index.css.map */
