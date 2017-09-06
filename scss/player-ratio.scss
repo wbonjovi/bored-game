@@ -1,0 +1,63 @@
+
+
+
+
+
+body {
+  background-color: #f0f0f0;
+  margin: 3em 0 0 0;
+
+  .row {
+    margin:   .5rem 0;
+    padding: 1rem;
+  }
+
+  .header-text {
+    font-size: 2rem;
+    background: white;
+    box-shadow: gray;
+  }
+  .player-number {
+    height: 30vw;
+    background: white;
+  }
+  .about-blank {
+    height: 20vh;
+    background: white;
+  }
+  .input-number {
+    height: 20vh;
+    background: white;
+
+    .yellow-text {
+      color: #FAB344;
+      font-size: .5rem;
+
+    }
+    input {
+      outline-color:  #FAB344;
+      border: none;
+      background:  whitesmoke;
+      color: #FAB344;
+      padding: .5rem;
+      width: 4rem;
+    }
+  }
+}
+
+footer {
+  height: 10vh;
+  overflow: hidden;
+  padding: 1rem;
+  width: 100%;
+  button {
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    background: #FAB344;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+  }
+}
