@@ -6,86 +6,22 @@
     <script src="../js/jquery/2.0.0/jquery.min.js"></script>
     <link href="../css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
     <script src="../js/bootstrap/3.3.6/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../scss/player-ratio.css">
     <link rel="stylesheet" href="../scss/header.css">
-    <script>
+    <link rel="stylesheet" href="../scss/body.css">
+    <script src="../js/player-ratio.js"></script>
+    <link rel="stylesheet" type="text/css" href="../scss/player-ratio.css">
 
-        var numberPlayer ,  //玩家数量
-            numberKill ,    //杀手数量
-            numberPeople,     //平民数量
-            arrayOfPlayer;   //玩家数组
-
-
-        function getInputValue( ) {
-            numberPlayer = document.getElementById("idOfNumberOfPlayer").value;
-
-//            alert(numberPlayer);
-            if (numberPlayer<4 || numberPlayer>18){
-                alert("请输入正确的玩家数量");
-                return 0;
-            }
-            else {
-                arrayOfPlayer = [];
-                arrayOfPlayer.length =  numberPlayer ;
-                //计算杀手与平民的人数
-                var number  =  allocateNumber(numberPlayer);
-
-                //为杀手、平民的人数赋值
-                numberKill = number[0];
-                numberPeople = number[1];
-
-                //0代表是杀手
-                for (var i =0 ; i < numberKill; i++ ){
-                    arrayOfPlayer[i]=0;
-                }
-                //1代表是平民
-                for (var i = numberKill ; i < numberPlayer; i++ ){
-                    arrayOfPlayer[i]= 1;
-                }
-
-                for ( var i =0 ; i < arrayOfPlayer.length ; i++){
-                    alert(arrayOfPlayer[i]);
-                }
-
-                //数组乱序
-                if (!Array.prototype.shuffle) {
-                    Array.prototype.shuffle = function() {
-                        for(var j, x, i = this.length; i; j = parseInt(Math.random() * i), x = this[--i], this[i] = this[j], this[j] = x);
-                        return this;
-                    };
-                }
-                arrayOfPlayer.shuffle();
-
-
-                //添加文本至DOM中
-                document.getElementById("idOfNumberOfKill").textContent = number[0];
-                document.getElementById("idOfNumberOfPeople").textContent = number[1];
-
-            }
-        }
-
-        //分配杀手与平民的人数
-        function allocateNumber( numberOfPlayer ) {
-            var number = new Array(2);
-            number[0] = Math.ceil( numberOfPlayer / 4);
-            number[1] = numberOfPlayer - number[0];
-            return number;
-        }
-
-    </script>
     <title>Player Ratio</title>
 </head>
 <body>
 
-<header class=" header ">
-    <div>
-        <div class=" three-bar   ">
-            <div class="bar white"></div>
-            <div class="bar "></div>
-            <div class="bar white"></div>
-            <div class="bar "></div>
-            <div class="bar white"></div>
-        </div>
+<header class="header">
+    <div class="left">
+        <img src="../images/left-direction.png" alt="">
+    </div>
+    <span id="header-center-text" class="text-center">查看身份</span>
+    <div class="right">
+        <img src="../images/wrong.png" alt="">
     </div>
 </header>
 
@@ -106,7 +42,9 @@
     </div>
 </div>
 <footer>
-    <button onclick="getInputValue()">去发牌</button>
+    <!--<a href="view-identity.html?id=abc">-->
+        <button  onclick=" location.href = jumpLink()">去发牌</button>
+    <!--</a>-->
 
 </footer>
 

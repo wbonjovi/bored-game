@@ -1,0 +1,58 @@
+body {
+  margin-top: 6rem;
+  background-color: #29BDE0; }
+  body #divPictureOfPlayer {
+    height: 60vh;
+    width: 70vw;
+    border: 2px solid white;
+    background-color: #FDF0CC;
+    overflow: hidden;
+    margin: 2rem auto; }
+  body #idStatus {
+    margin: 1rem auto;
+    width: 30vh;
+    height: 30vh;
+    background: url(../images/view-status.png) no-repeat 100% 100%;
+    background-size: 100% 100%; }
+  body #idStatusText {
+    color: #29BDE0; }
+  body .box {
+    position: relative;
+    border-radius: 2px;
+    margin-top: 2rem; }
+  body .box .bmbox {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+  body .box .bmbox .circle-number {
+    background: #9d9d9d;
+    display: table;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    color: white;
+    margin: 2px; }
+  body .box .bmbox .table-son {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle; }
+
+footer {
+  height: 10vh;
+  overflow: hidden;
+  padding: 1rem;
+  width: 100%; }
+  footer button {
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    background: #FAB344;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 2rem; }
+
+/*# sourceMappingURL=view-identity.css.map */

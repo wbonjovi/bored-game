@@ -1,3 +1,24 @@
+header {
+  width: 100%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-color: #5AC0CE;
+  font-size: 1.5em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  clear: both;
+  z-index: 3; }
+  header .three-bar .bar {
+    margin-left: 1rem;
+    height: 0.3em;
+    width: 2em; }
+  header .three-bar .white {
+    height: 0.07em;
+    width: 1em;
+    background-color: white; }
+
 body {
   background-color: #f0f0f0;
   margin: 4em 0; }
