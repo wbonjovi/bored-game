@@ -8,10 +8,9 @@
     <script src="../js/bootstrap/3.3.6/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../scss/header.css">
     <link rel="stylesheet" href="../scss/body.css">
-    <script src="../js/player-ratio.js"></script>
     <link rel="stylesheet" type="text/css" href="../scss/player-ratio.css">
 
-    <title>Player Ratio</title>
+    <title>玩家配比</title>
 </head>
 <body>
 
@@ -38,16 +37,17 @@
 
     </div>
     <div class="row input-number">
-        <p class="text-center"> <b>请输入玩家数量</b> <input type="text" id="idOfNumberOfPlayer" class="text-center" onblur="getInputValue()"> <span class="yellow-text">玩家数量为4~18个</span></p>
+        <p class="text-center"> <b>请输入玩家数量</b> <input type="text" id="idOfNumberOfPlayer" class="text-center" oninput="getInputValue()" onblur="getInputValue()" > <span class="yellow-text">玩家数量为4~18个</span></p>
     </div>
 </div>
 <footer>
     <!--<a href="view-identity.html?id=abc">-->
-        <button  onclick=" location.href = jumpLink()">去发牌</button>
+        <button  onclick="jumpLink()">去发牌</button>
     <!--</a>-->
 
 </footer>
 
+<script src="../js/player-ratio.js"></script>
 
 </body>
 </html>

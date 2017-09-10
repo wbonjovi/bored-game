@@ -8,9 +8,9 @@ var numberPlayer ,  //玩家数量
 function getInputValue( ) {
     numberPlayer = document.getElementById("idOfNumberOfPlayer").value;
 
-//            alert(numberPlayer);
     if (numberPlayer<4 || numberPlayer>18){
-        alert("请输入正确的玩家数量");
+        document.getElementById("idOfNumberOfKill").textContent = "";
+        document.getElementById("idOfNumberOfPeople").textContent = "";
         return 0;
     }
     else {
@@ -59,8 +59,14 @@ function allocateNumber( numberOfPlayer ) {
 }
 
 function jumpLink() {
-    var str = "view-identity.html?";
-    var stringOfPlayer = arrayOfPlayer.join("-");
-    str = str  + stringOfPlayer;
-    return str;
+
+    if (numberPlayer<4 || numberPlayer>18){
+        alert("请输入正确的玩家数量");
+    }
+    else  {
+        var str = "view-identity.html?";
+        var stringOfPlayer = arrayOfPlayer.join("-");
+        str = str  + stringOfPlayer;
+        location.href = str;
+    }
 }

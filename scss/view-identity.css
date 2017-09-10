@@ -1,13 +1,6 @@
 body {
   margin-top: 6rem;
   background-color: #29BDE0; }
-  body #divPictureOfPlayer {
-    height: 60vh;
-    width: 70vw;
-    border: 2px solid white;
-    background-color: #FDF0CC;
-    overflow: hidden;
-    margin: 2rem auto; }
   body #idStatus {
     margin: 1rem auto;
     width: 30vh;
@@ -16,29 +9,24 @@ body {
     background-size: 100% 100%; }
   body #idStatusText {
     color: #29BDE0; }
-  body .box {
-    position: relative;
-    border-radius: 2px;
-    margin-top: 2rem; }
-  body .box .bmbox {
-    width: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center; }
-  body .box .bmbox .circle-number {
-    background: #9d9d9d;
-    display: table;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    color: white;
-    margin: 2px; }
-  body .box .bmbox .table-son {
-    display: table-cell;
+  body .main {
+    height: 60vh;
+    width: 70vw;
+    max-width: 480px;
+    margin: 8.4rem auto;
     text-align: center;
-    vertical-align: middle; }
+    border: 0.6rem solid #fff;
+    background-color: #ffedc5; }
+  body .circle {
+    width: 6.8rem;
+    height: 6.8rem;
+    margin: -4rem auto 0 auto;
+    font-size: 4rem;
+    line-height: 6.8rem;
+    border: 0.3rem solid #ffedc5;
+    border-radius: 50%;
+    color: #f56b81;
+    background-color: #fff; }
 
 footer {
   height: 10vh;
