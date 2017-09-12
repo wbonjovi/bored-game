@@ -1,16 +1,16 @@
 header {
-  text-align: center;
-  font-size: 1.5rem;
-  color: white;
   overflow: hidden;
   width: 100%;
   background-color: #29BDE0;
   position: fixed;
   top: 0;
   left: 0;
-  padding: 1rem 0;
   display: inline-block;
-  z-index: 1; }
+  z-index: 1;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  padding: 1rem 0; }
   header .left {
     float: left;
     width: 2rem;
